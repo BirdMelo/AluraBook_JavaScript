@@ -6,6 +6,7 @@
   --text-title-color: #fc6621;
   --text-description-color: #fc6621;
   --text-price-color: #002f52;
+  --text-fullPrice-color: #002f52a1;
   --text-author-color: #858585;
   --text-tag-color: #9c9c9c;
 }
@@ -64,7 +65,7 @@ body {
 
 .livros {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -101,6 +102,12 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: var(--text-price-color);
+}
+
+#cheio {
+  color: var(--text-fullPrice-color);
+  text-decoration: line-through;
+  font-size: 16px;
 }
 
 .tags {
